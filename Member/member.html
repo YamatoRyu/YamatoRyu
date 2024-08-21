@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member</title>
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="../Member/member.css">
+
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <section class="gambar">
+        <nav>
+            <div class="logo">
+                <img src="../image/8 Logo.png">
+            </div>
+
+            <div class="link-nav" id="navLink">
+                <i class="close" data-feather="x" onclick="hideMenu()"></i>
+                <a href="../home.html">Home</a>
+                <a href="">Member</a>
+                <a href="">Character Story</a>
+                <a href="">Album</a>
+                <a href="">Location</a>
+            </div>
+
+            <div class="link-navbar-handphone">
+                <i data-feather="menu" id="menu-bar" onclick="showMenu()"></i>
+            </div>
+        </nav>
+
+        <div class="image">
+            <a href=""><img src="../image/Aqours member Image/Chika-chan Winter Uniform face.png" alt="" class="chika-chan"></a>
+            <a href=""><img src="../image/Aqours member Image/Riko-chan Winter Uniform face.png" alt="" class="riko-chan"></a>
+            <a href=""><img src="../image/Aqours member Image/Kanan-chan Winter Uniform face.png" alt="" class="kanan-chan"></a>
+            <a href=""><img src="../image/Aqours member Image/Dia-san Winter Uniform face.png" alt="" class="dia-san"></a>
+        </div>
+
+        <div class="image1">
+            <a href=""><img src="../image/Aqours member Image/You-chan Winter Uniform face.png" alt="" class="you-chan"></a>
+            <a href=""><img src="../image/Aqours member Image/Yoshiko-chan Winter Uniform face.png" alt="" class="yoshiko-chan"></a>
+            <a href=""><img src="../image/Aqours member Image/Hanamaru-chan Winter Uniform face.png" alt="" class="hanamaru-chan"></a>
+            <a href=""><img src="../image/Aqours member Image/Mari-chan Winer Uniform face.png" alt="" class="mari-chan"></a>
+            <a href=""><img src="../image/Aqours member Image/Ruby-chan Winter Uniform face.png" alt="" class="ruby-chan"></a>
+        </div>
+    </section>
+
+    <!-- Feather Icon place start -->
+    <script>
+        feather.replace();
+    </script>
+    <!-- Feather Icon place end -->
+
+    <!-- nama file: Tasbar.js -->
+    <script>
+        var namaNavbar = document.getElementById("navLink");
+
+        function showMenu() {
+            namaNavbar.style.right = "0";
+        }
+
+        function hideMenu() {
+            namaNavbar.style.right = "-100%";
+        }
+    </script>
+</body>
+</html>

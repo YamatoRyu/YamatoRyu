@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Section Gambar start */
+.gambar {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(127, 255, 212, 0.7), rgb(255, 255, 255) 98%), url("../image/3-Uranohoshi_High_School_in_class.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* Section Gambar end */
+
+/* Bagian nav bar start */
+.gambar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 7%;
+}
+
+.gambar nav .link-nav a {
+    color: silver;
+    transition: 0.5s;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 2rem;
+    text-decoration: none;
+}
+
+.gambar nav .link-nav .close {
+    display: none;
+}
+
+.gambar nav .link-nav a:hover {
+    color: lightcyan;
+    transition: 0.5s;
+}
+
+.gambar nav .link-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.2rem solid rgb(221, 185, 221);
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.gambar nav .link-nav a:hover::after {
+    transform: scaleX(1);
+    transition: 0.5s;
+}
+
+.gambar nav .link-navbar-handphone a {
+    color: gray;
+    transition: 0.5s;
+}
+
+.gambar nav .link-navbar-handphone a:hover {
+    color: rgb(207, 207, 207);
+    transition: 0.5s;
+}
+
+#menu-bar {
+    display: none;
+}
+/* Bagian nav bar end */
+
+/* Bikin gambar start */
+.image {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.image a {
+    padding: 0;
+    margin: 0;
+}
+
+.image img {
+    width: 13%;
+    border-radius: 50%;
+    background-color: aqua;
+    border: 10px solid snow;
+    display: inline-block;
+    margin: 0.5rem 3%;
+    padding: 0;
+    margin-top: 2rem;
+    transition: 0.5s;
+}
+
+.image1 {
+    text-align: center;
+}
+
+.image1 img {
+    width: 13%;
+    border-radius: 50%;
+    background-color: aqua;
+    border: 10px solid snow;
+    display: inline-block;
+    padding: 0;
+    margin: 0.5rem 2%;
+    transition: 0.5s;
+}
+
+/* Karakter start */
+.image .chika-chan:hover {
+    background-color: #F0A20B;
+    transition: 0.5s;
+    margin-bottom: 0.2rem;
+}
+
+.image .riko-chan:hover {
+    background-color: #E9A9E8;
+    transition: 0.5s;
+    margin-bottom: 0.2rem;
+}
+
+.image .kanan-chan:hover {
+    background-color: #13E8AE;
+    transition: 0.5s;
+    margin-bottom: 0.2rem;
+}
+
+.image .dia-san:hover {
+    background-color: #F23B4C;
+    transition: 0.5s;
+    margin-bottom: 0.2rem;
+}
+
+.image1 .you-chan:hover {
+    background-color: #49B9F9;
+    transition: 0.5s;
+    margin-bottom: 0.2rem;
+}
+
+.image1 .yoshiko-chan:hover {
+    background-color: #898989;
+    transition: 0.5s;
+    margin-bottom: 0.2rem;
+}
+
+.image1 .hanamaru-chan:hover {
+    background-color: #E6D617;
+    transition: 0.5s;
+    margin-bottom: 0.2rem;
+}
+
+.image1 .mari-chan:hover {
+    background-color: #AE58EB;
+    transition: 0.5s;
+    margin-bottom: 0.2rem;
+}
+
+.image1 .ruby-chan:hover {
+    background-color: #FB75E4;
+    transition: 0.5s;
+    margin-bottom: 0.2rem;
+}
+/* Karakter end */
+/* Bikin gambar end */
+
+/* Bagian Phone dan Table start */
+@media(max-width: 900px) {
+    html {
+        font-size: 67%;
+    }
+
+    .gambar nav .logo a img {
+        width: 90%;
+        height: auto;
+    }
+
+    .gambar .text h1 {
+        font-size: 3rem;
+        color: aqua;
+    }
+
+    .gambar nav .link-nav .close {
+        display: block;
+        color: white;
+        margin: 1rem;
+    }
+    
+    #menu-bar {
+        display: inline-block;
+    }
+
+    .gambar nav .link-nav {
+        position: absolute;
+        background: rgb(248, 205, 213);
+        height: 100vh;
+        width: 30rem;
+        top: 0;
+        right: -100%;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    .gambar nav .link-nav a {
+        display: block;
+        padding: 2rem;
+        font-size: 2rem;
+        color: snow;
+        margin: 1.8rem;
+    }
+
+    .gambar nav .link-nav a:hover {
+        color: aquamarine;
+    }
+
+    .gambar nav .link-nav a::after {
+        transform-origin: 0 0;
+        border-bottom: 2px solid gold;
+    }
+
+    .gambar nav .link-nav a:hover::after {
+        transform: scaleX(0.4);
+    }
+}
+/* Bagian Phone dan Table end */

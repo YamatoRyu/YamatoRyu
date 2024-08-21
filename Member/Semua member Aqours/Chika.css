@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bagian-utama {
+    text-align: center;
+    background-color: aquamarine;
+    padding: 6rem;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-size: 3.6rem;
+    letter-spacing: 3px;
+}
+
+/* Bagian gambar start */
+.gambar .pembukaan {
+    margin: 5rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gambar .pembukaan .idol {
+    width: 50%;
+    margin: 2rem;
+    padding: 0;
+}
+
+/* Perkenalan start */
+.gambar .pembukaan .name h1 {
+    font-size: 3rem;
+    color: #F0A20B;
+    margin-bottom: 10px;
+}
+
+.gambar .pembukaan .name h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.gambar .pembukaan .name .perkenalan .face img {
+    width: 30%;
+    margin: 40px 1%;
+    padding: 10px;
+    background-color: #F0A20B;
+    border-radius: 50%;
+}
+
+.gambar .pembukaan p {
+    margin-bottom: 19px;
+    font-size: 1.2rem;
+}
+
+/* tabel start */
+.gambar .pembukaan .tabel {
+    background-color: snow;
+}
+
+.gambar .pembukaan .tabel ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+/* tabel end */
+/* Perkenalan end */
+/* Bagian gambar end */

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqours</title>
+
+    <!-- CSS style -->
+    <link rel="stylesheet" href="../Aqours/style.css">
+
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <!-- Baigian dalam Gambar start -->
+    <section class="gambar">
+        <nav>
+            <div class="logo">
+                <img src="../Aqours/image/8 Logo.png">
+            </div>
+
+            <div class="link-nav" id="navLink">
+                <i class="close" data-feather="x" onclick="hideMenu()"></i>
+                <a href="../Aqours/home.html">Home</a>
+                <a href="../Aqours/Member/member.html">Member</a>
+                <a href="">Character Story</a>
+                <a href="">Album</a>
+                <a href="">Location</a>
+            </div>
+
+            <div class="link-navbar-handphone">
+                <i data-feather="menu" id="menu-bar" onclick="showMenu()"></i>
+            </div>
+        </nav>
+
+        <div class="text">
+            <h1>Aqo<span>urs</span></h1>
+            <p>
+                <span class="group-name">Aqours</span> is a school idol group that was originally formed and led by <span class="kanan">Matsuura Kanan (松浦果南)</span> two years prior to falling apart and was eventually succeeded by <span class="chika">Takami Chika (高海千歌)</span> in <span class="judul-anime">Love Live! <span>Sunshine!!</span></span>.<br>They were the school idol group of <span class="school-name">Uranohoshi Girls' High School</span>. The original group consisted of three members, while the new group consisted of nine members. <br>At the beginning of the movie, the group continues with six of the members at <span class="city-name">Numazu</span> High School following their temporary integration at Seishin High School. They debuted with the song <span class="first-song">Kimi no Kokoro wa <span>Kagayaiteru kai?</span></span> or in japanese kanji is <span class="first-song">君のこころは<span>輝いてるかい？</span></span>.
+            </p>
+
+            <a href="" class="hero-bottom">All Aqours Story</a>
+        </div>
+    </section>
+    <!-- Baigian dalam Gambar end -->
+
+    <!-- Bagian luar gambar start -->
+    <!-- Bagian musim dari Aqours start -->
+    <section class="musim">
+        <h1>Season 1, Season 2, and Movie</h1>
+        <p class="luar">All about Aqours member per one episode and one season</p>
+
+        <div class="season">
+            <div class="s-one">
+                <a href="">
+                    <h3>Season 1</h3>
+                    <p>
+                        Chika Takami, a self-proclaimed normal girl, has never been involved in any clubs and lacked any notable talents.However, after a visit to Tokyo, she discovers a stage where even an ordinary girl like her could shine—the world of school idols, inspired by the former superstar school idol group μ's.
+                    </p>
+                </a>
+            </div>
+
+            <div class="s-one">
+                <a href="">
+                    <h3>Season 2</h3>
+                    <p>
+                        Having decided to walk down a path separate from their inspirations as idols, the girls of Aqours are more determined than ever to shine brilliantly as school idols. With their previous performance marginally increasing the number of prospective students for their endangered school.
+                    </p>
+                </a>
+            </div>
+
+            <div class="s-one">
+                <a href="">
+                    <h3>Over The Rainbow</h3>
+                    <p>
+                        Following the closure of Uranohoshi Girls' High School, the third-year students Dia Kurosawa, Kanan Matsuura, and Mari Ohara have just graduated, leaving Aqours with solely the first and second-years. While searching for a new place the remaining members can use to practice.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Bagian musim dari Aqours end -->
+    <!-- Bagian luar gambar end -->
+
+    <!-- Feather Icon place start -->
+    <script>
+        feather.replace();
+    </script>
+    <!-- Feather Icon place end -->
+
+    <!-- nama file: Tasbar.js -->
+    <script>
+        var namaNavbar = document.getElementById("navLink");
+
+        function showMenu() {
+            namaNavbar.style.right = "0";
+        }
+
+        function hideMenu() {
+            namaNavbar.style.right = "-100%";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Section Gambar start */
+.gambar {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7), rgb(255, 255, 255) 98%), url(image/1-UranohoshiHighSchool_at_front.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* Section Gambar end */
+
+/* Bagian nav bar start */
+.gambar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 7%;
+}
+
+.gambar nav .link-nav a {
+    color: silver;
+    transition: 0.5s;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 2rem;
+    text-decoration: none;
+}
+
+.gambar nav .link-nav .close {
+    display: none;
+}
+
+.gambar nav .link-nav a:hover {
+    color: lightcyan;
+    transition: 0.5s;
+}
+
+.gambar nav .link-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.2rem solid rgb(221, 185, 221);
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.gambar nav .link-nav a:hover::after {
+    transform: scaleX(1);
+    transition: 0.5s;
+}
+
+.gambar nav .link-navbar-handphone a {
+    color: gray;
+    transition: 0.5s;
+}
+
+.gambar nav .link-navbar-handphone a:hover {
+    color: rgb(207, 207, 207);
+    transition: 0.5s;
+}
+
+#menu-bar {
+    display: none;
+}
+/* Bagian nav bar end */
+
+/* bagian text start */
+.gambar .text {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.gambar .text h1 {
+    font-size: 4rem;
+    color: aqua;
+}
+
+.gambar .text h1 span {
+    color: white;
+}
+
+.gambar .text p {
+    margin: 15px 0 45px;
+    font-size: 1.2rem;
+}
+
+/* Warna pada nama nama character start */
+.gambar .text p .group-name {
+    color: aqua;
+    font-size: 1.3rem;
+}
+
+.gambar .text p .chika {
+    color: #F0A20B;
+    font-size: 1.3rem;
+}
+
+.gambar .text p .kanan {
+    color: #13E8AE;
+    font-size: 1.3rem;
+}
+
+.gambar .text p .judul-anime {
+    color: palevioletred;
+    font-size: 1.3rem;
+}
+
+.gambar .text p .judul-anime span {
+    color: aquamarine;
+    font-size: 1.4rem;
+}
+
+.gambar .text p .school-name {
+    color: aqua;
+    font-size: 1.5rem;
+}
+
+.gambar .text p .city-name {
+    color: aqua;
+    font-size: 1.5rem;
+}
+
+.gambar .text p .first-song {
+    color: #e4c17a;
+    font-size: 1.4rem;
+}
+
+.gambar .text p .first-song span {
+    color: #ecb4eb;
+}
+/* Warna pada nama nama character end */
+
+.gambar .text .hero-bottom {
+    display: inline-block;
+    text-decoration: none;
+    color: snow;
+    border: 2px solid rgb(247, 229, 126);
+    padding: 12px 35px;
+    font-size: 1.3rem;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.gambar .text .hero-bottom:hover {
+    border: 5px solid rgb(219, 127, 219);
+    background: plum;
+    transition: 0.5s;
+}
+/* bagian text end */
+
+/* Bagian Phone dan Table start */
+@media(max-width: 900px) {
+    html {
+        font-size: 67%;
+    }
+
+    .gambar nav .logo a img {
+        width: 90%;
+        height: auto;
+    }
+
+    .gambar .text h1 {
+        font-size: 3rem;
+        color: aqua;
+    }
+
+    .gambar nav .link-nav .close {
+        display: block;
+        color: white;
+        margin: 1rem;
+    }
+    
+    #menu-bar {
+        display: inline-block;
+    }
+
+    .gambar nav .link-nav {
+        position: absolute;
+        background: rgb(248, 205, 213);
+        height: 100vh;
+        width: 30rem;
+        top: 0;
+        right: -100%;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    .gambar nav .link-nav a {
+        display: block;
+        padding: 2rem;
+        font-size: 2rem;
+        color: snow;
+        margin: 1.8rem;
+    }
+
+    .gambar nav .link-nav a:hover {
+        color: aquamarine;
+    }
+
+    .gambar nav .link-nav a::after {
+        transform-origin: 0 0;
+        border-bottom: 2px solid gold;
+    }
+
+    .gambar nav .link-nav a:hover::after {
+        transform: scaleX(0.4);
+    }
+
+    /* Bagian Season dan diluar gambar start */
+    .season {
+        flex-direction: column;
+        padding: 0 8rem;
+        font-size: 1rem;
+    }
+    /* Bagian Season dan diluar gambar end */
+}
+/* Bagian Phone dan Table end */
+
+/* Bagian Season dan diluar gambar start */
+.musim {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.musim h1 {
+    font-size: 2.4rem;
+    padding: 20px;
+    margin: 0.5rem;
+}
+
+.musim .luar {
+    font-size: 1.5rem;
+    font-weight: 250px;
+    line-height: 20px;
+    padding: 2px;
+}
+
+/* Bagian Season start */
+.season {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.season .s-one {
+    flex-basis: 31%;
+    background: #e7b5e6;
+    border-radius: 15px;
+    margin-bottom: 3%;
+    padding: 0.4rem 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.season .s-one:hover {
+    box-shadow: 0 1px 20px 2px rgb(0, 0, 0);
+}
+
+.season .s-one a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.season .s-one h3 {
+    text-align: center;
+    font-weight: 800px;
+    margin: 1rem;
+}
+/* Bagian Season end */
+/* Bagian Season dan diluar gambar end */
